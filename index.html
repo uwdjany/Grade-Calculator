@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #FC466B,#00003b);
+}
+.container .card{
+    height: 50vh;
+    width: 300px;
+    background: rgba(255, 255, 255,0.3);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 3.2px;
+    border-top: 1px solid rgba(255, 255,255, 0.2);
+    border-left: 1px solid rgba(255, 255,255, 0.2);
+     
+
+}
+.flex-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+h3{
+    text-align: center;
+    position: relative;
+    top: 20%;
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+    font-family: sans-serif;
+    text-shadow: rgba(0, 0, 0, 0.15) 2.4px 3.2px;
+}
+.input{
+    margin: 10px 0px;
+}
+.input input{
+    width: 90%;
+    margin: 10px;
+    height: 20px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    text-indent: 30px;
+    padding: 3px 5px;
+    color: black;
+}
+::placeholder{
+    font-weight: bold;
+    text-indent: 30px;
+    padding: 3px 5px;
+    color: black;
+}
+button{
+    background-color: crimson;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    padding: 3px 15px;
+    color: #fff;
+    margin: 10px 90px;
+    cursor: pointer;
+}
+p{
+   color: crimson;
+   
+    font-weight: bold;
+    padding: 3px 15px;
+    color: #fff;
+   text-align: center;
+   
+
+}
+</style>
+<body>
+    <div class="container">
+        <h3>Student grade calculator</h3>
+        <div class="flex-box">
+            <div class="card">
+                <div class="input">
+                    <input type="number" id="p" placeholder="physics">
+                    <input type="number" id="c" placeholder="chemistry">
+                    <input type="number" id="d" placeholder="digital">
+                    <input type="number" id="f" placeholder="IT fundamental">
+                    <button onclick="calculate()">calculate Marks</button>
+                    <p id="demo"></p>
+                    <p id="demo1"></p>
+                    <p id="demo3"></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="index.js"></script>
+</html>
